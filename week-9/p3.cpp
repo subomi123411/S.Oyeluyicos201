@@ -8,17 +8,21 @@ int main() {
 // ifstream ==> read from a file (input)
 // fstream  ==> read and write to a file (input and output)
     
-    ofstream outfile("data.txt");
+    ifstream infile("data.txt");
 
-    if(!outfile) {
+    if(!infile) {
         cout << "Error opening file.";
         return 0;
     }
-    
-    outfile << "Welcome to C++ class\n";
-    outfile << "This is file handling class\n";
-    outfile.close();
+    string line;
+    int count = 0;
+    while(getline(infile, line)) {
+        cout << line << endl;
+        count++;
+    }
+    cout<< "The number of lines are "<< count;
+    infile.close();
 
-    cout << "DONE"<<endl;
+    cout <<"\nDONE";
 }
 
