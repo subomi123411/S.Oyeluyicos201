@@ -8,5 +8,5 @@ int main(){
     cout << "long: " <<sizeof(long)*8 << " bits\n";
     cout << "long long: " <<sizeof(long long)*8 << " bits\n";
     cout << "float: " <<sizeof(float)*8 << " bits\n";
-    cout << "double: " <<sizeof(float)*8 << " bits\n";
+    cout << "double: " <<sizeof(double)*8 << " bits\n";
 }
