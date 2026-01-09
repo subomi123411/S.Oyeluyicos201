@@ -11,10 +11,10 @@ int main (){
         num2 = temp;
     }
     int value_resp, actual_ans = num1 - num2;
-    cout << "What is the value of "<< num1 <<" - " << num2 <<"?";
+    cout << "What is the value of "<< num1 <<" - " << num2 <<"?\n";
     cin >> value_resp;
     while(value_resp != actual_ans){
-        cout << "Wrong answer. Try again.";
+        cout << "Wrong answer. Try again.\n";
         cin >> value_resp;
     }
     cout<<"You got it!";
